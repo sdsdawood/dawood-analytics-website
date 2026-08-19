@@ -1,0 +1,11 @@
+services:
+
+  - type: web
+
+    name: dawood-analytics-website
+
+    runtime: python
+
+    buildCommand: pip install -r requirements.txt
+
+    startCommand: gunicorn app:app
