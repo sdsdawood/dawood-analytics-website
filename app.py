@@ -63,6 +63,58 @@ def data_platform():
 
 
 
+
+
+# ==========================================================
+# ABOUT PAGE ROUTE
+# ==========================================================
+
+
+@app.route("/about")
+def about():
+
+    return render_template(
+        "about.html"
+    )
+
+
+
+
+
+# ==========================================================
+# SERVICES ROUTES
+# ==========================================================
+
+
+@app.route("/services/erp")
+def service_erp():
+
+    return render_template(
+        "services/erp.html"
+    )
+
+
+
+
+@app.route("/services/data-analytics")
+def service_data_analytics():
+
+    return render_template(
+        "services/data_analytics.html"
+    )
+
+
+
+
+@app.route("/services/automation")
+def service_automation():
+
+    return render_template(
+        "services/automation.html"
+    )
+
+
+
 # ==========================================================
 # CONTACT FORM
 # ==========================================================

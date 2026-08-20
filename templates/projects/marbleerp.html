@@ -2,6 +2,41 @@
 
 {% block title %}
 MarbleERP | ERP Software Development | Dawood Analytics
+
+
+<div class="project-info text-center">
+
+
+<h2>
+Interested in a Custom ERP Solution?
+</h2>
+
+
+<p>
+
+Need a business management system, automation solution,
+or custom software designed for your workflow?
+
+Let's discuss how technology can improve your business
+operations.
+
+</p>
+
+
+
+<a href="{{ url_for('contact') }}"
+class="action-btn">
+
+<i class="fa-solid fa-envelope"></i>
+
+Contact Me
+
+</a>
+
+
+</div>
+
+
 {% endblock %}
 
 
@@ -22,33 +57,64 @@ for inventory, accounting, sales and business management.
 
 
 
+
+
+<script>
+
+gtag('event', 'view_project', {
+
+    project_name: 'MarbleERP'
+
+});
+
+</script>
+
+
+
 {% block content %}
 
 
 <section class="project-detail">
 
 
+
 <div class="project-hero">
 
+    <span class="tech-badge">
+        Professional ERP Solution
+    </span>
 
-<img 
-src="{{ url_for('static', filename='images/marbleerp.png') }}"
-class="project-banner"
->
+    <h1>
+        MarbleERP
+    </h1>
 
+    <h2>
+        Complete Business Management Software
+    </h2>
 
-<h1>
-MarbleERP
-</h1>
+    <p>
+        MarbleERP is a comprehensive business management solution
+        developed using Python and Flask. It integrates accounting,
+        inventory, purchasing, sales, and financial reporting into
+        one unified platform to improve business efficiency and
+        decision-making.
+    </p>
 
+    <div class="tech-badges">
 
-<p>
-Complete ERP solution for inventory,
-sales, purchasing and accounting operations.
-</p>
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Flask</span>
+        <span class="tech-badge">SQLite</span>
+        <span class="tech-badge">Bootstrap</span>
+        <span class="tech-badge">HTML5</span>
+        <span class="tech-badge">CSS3</span>
+        <span class="tech-badge">Jinja2</span>
+        <span class="tech-badge">JavaScript</span>
 
+    </div>
 
 </div>
+
 
 
 
@@ -169,8 +235,8 @@ Documentation
 
 
 
-<div class="project-info">
 
+<div class="project-info">
 
 <h2>
 Project Overview
@@ -179,14 +245,56 @@ Project Overview
 
 <p>
 
-MarbleERP is a complete business management
-system designed to automate daily operations,
-financial processes and reporting.
+MarbleERP is a complete business management system designed
+for marble, granite and trading businesses. The system combines
+accounting, inventory, sales, purchasing and reporting into a
+single integrated platform.
+
+It was developed to replace manual processes and provide
+business owners with accurate information for better decisions.
 
 </p>
 
 
 </div>
+
+
+
+<div class="project-info">
+
+
+<h2>
+Business Problems
+</h2>
+
+
+<ul>
+
+<li>
+Manual bookkeeping and accounting processes
+</li>
+
+<li>
+Difficulty tracking inventory movement
+</li>
+
+<li>
+Separated sales, purchase and financial records
+</li>
+
+<li>
+Delayed business reporting and analysis
+</li>
+
+<li>
+Limited visibility into business performance
+</li>
+
+</ul>
+
+
+</div>
+
 
 
 
@@ -230,6 +338,84 @@ Documentation
 
 
 
+
+<div class="project-info">
+
+
+<h2>
+Solution
+</h2>
+
+
+<p>
+
+MarbleERP provides a complete integrated ERP environment where
+business operations are connected through a single system.
+
+The solution combines accounting, inventory management,
+sales, purchasing and reporting modules to improve accuracy,
+reduce manual work and provide better business visibility.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="project-info">
+
+
+<h2>
+Core Features
+</h2>
+
+
+<ul>
+
+
+<li>
+<b>Accounting Management:</b>
+Double-entry accounting, ledger management,
+financial statements and reporting.
+</li>
+
+
+<li>
+<b>Inventory Management:</b>
+Stock tracking, item records, inventory movement
+and availability monitoring.
+</li>
+
+
+<li>
+<b>Sales Management:</b>
+Sales transactions, customer records,
+invoice management and sales reporting.
+</li>
+
+
+<li>
+<b>Purchase Management:</b>
+Supplier management, purchase records
+and procurement tracking.
+</li>
+
+
+<li>
+<b>Business Reports:</b>
+Financial reports, summaries and analytical
+insights for decision making.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
 <div class="project-info">
 
 
@@ -238,38 +424,118 @@ Technology Stack
 </h2>
 
 
-<div class="tech-badges">
+<div class="tech-stack">
 
 
-<span class="tech-badge">
+<div class="meta-card">
+
+<h3>
 Python
-</span>
+</h3>
+
+<p>
+Core programming language used for ERP logic,
+automation and business processes.
+</p>
+
+</div>
 
 
-<span class="tech-badge">
+
+<div class="meta-card">
+
+<h3>
 Flask
-</span>
+</h3>
+
+<p>
+Web framework used to build application structure,
+routes and backend functionality.
+</p>
+
+</div>
 
 
-<span class="tech-badge">
+
+<div class="meta-card">
+
+<h3>
 SQLite
-</span>
+</h3>
+
+<p>
+Database engine used for storing business
+transactions and records.
+</p>
+
+</div>
 
 
-<span class="tech-badge">
+
+<div class="meta-card">
+
+<h3>
 Pandas
-</span>
+</h3>
+
+<p>
+Used for data processing, analysis and
+automated reporting.
+</p>
+
+</div>
 
 
-<span class="tech-badge">
+
+<div class="meta-card">
+
+<h3>
 SQL
-</span>
+</h3>
 
+<p>
+Used for database queries, relationships
+and data management.
+</p>
+
+</div>
+
+
+
+<div class="meta-card">
+
+<h3>
+HTML / CSS / JavaScript
+</h3>
+
+<p>
+Frontend technologies used for creating
+responsive user interfaces.
+</p>
+
+</div>
+
+
+
+<div class="meta-card">
+
+<h3>
+Git & GitHub
+</h3>
+
+<p>
+Used for version control, collaboration
+and deployment workflow.
+</p>
 
 </div>
 
 
 </div>
+
+
+</div>
+
 
 
 
@@ -340,6 +606,113 @@ Key Features
 
 
 
+
+<div class="project-info">
+
+
+<h2>
+Product Screenshots
+</h2>
+
+
+<p>
+A preview of MarbleERP modules and business management features.
+</p>
+
+
+
+<div class="tech-stack">
+
+
+<div class="meta-card">
+
+<h3>
+Dashboard
+</h3>
+
+<p>
+Main business overview and system navigation.
+</p>
+
+</div>
+
+
+
+<div class="meta-card">
+
+<h3>
+Sales Module
+</h3>
+
+<p>
+Sales transactions, invoices and customer management.
+</p>
+
+</div>
+
+
+
+<div class="meta-card">
+
+<h3>
+Purchase Module
+</h3>
+
+<p>
+Supplier transactions and purchasing workflow.
+</p>
+
+</div>
+
+
+
+<div class="meta-card">
+
+<h3>
+Inventory Module
+</h3>
+
+<p>
+Stock management and item tracking system.
+</p>
+
+</div>
+
+
+
+<div class="meta-card">
+
+<h3>
+Accounting Module
+</h3>
+
+<p>
+Ledger, financial transactions and accounting records.
+</p>
+
+</div>
+
+
+
+<div class="meta-card">
+
+<h3>
+Reports
+</h3>
+
+<p>
+Financial reports and business analysis.
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
 <div class="project-impact">
 
 
@@ -350,14 +723,103 @@ Business Impact
 
 <p>
 
-Reduced manual work,
-improved accuracy and provided
-real-time business visibility.
+MarbleERP helps businesses reduce manual workload,
+improve record accuracy and gain better visibility
+into daily operations.
+
+The system provides structured workflows for accounting,
+inventory, sales and reporting, allowing business owners
+to make faster and more informed decisions.
 
 </p>
 
 
 </div>
+
+
+
+
+<div class="project-info">
+
+
+<h2>
+Development Journey
+</h2>
+
+
+<p>
+
+The development process followed a structured software
+engineering approach:
+
+</p>
+
+
+<ul>
+
+<li>
+Requirement analysis and business workflow understanding
+</li>
+
+<li>
+Database design and application architecture planning
+</li>
+
+<li>
+Development of modular ERP components
+</li>
+
+<li>
+Testing, debugging and validation of business processes
+</li>
+
+<li>
+Deployment preparation and production workflow setup
+</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+<div class="project-info">
+
+
+<h2>
+Challenges Solved
+</h2>
+
+
+<ul>
+
+<li>
+Designing accounting workflows and financial calculations
+</li>
+
+<li>
+Maintaining consistency between inventory and transactions
+</li>
+
+<li>
+Creating reliable reporting and summary systems
+</li>
+
+<li>
+Managing database relationships and data integrity
+</li>
+
+<li>
+Building a scalable structure for future expansion
+</li>
+
+</ul>
+
+
+</div>
+
 
 
 </section>

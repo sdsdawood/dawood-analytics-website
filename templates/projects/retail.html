@@ -15,19 +15,33 @@ and automated reporting solutions.
 
 
 
+
+
+<script>
+
+gtag('event', 'view_project', {
+
+    project_name: 'Retail Analytics'
+
+});
+
+</script>
+
+
+
 {% block content %}
 
 
 <section class="project-detail">
 
 
+
 <div class="project-hero">
 
 
-<img 
-src="{{ url_for('static', filename='images/retail_analytics.png') }}"
-class="project-banner"
->
+<span class="tech-badge">
+Business Intelligence Solution
+</span>
 
 
 <h1>
@@ -35,13 +49,53 @@ Retail Analytics
 </h1>
 
 
+<h2>
+Data Analytics & Business Intelligence Platform
+</h2>
+
+
 <p>
-Business intelligence platform for sales analysis,
-performance reporting and decision making.
+
+Retail Analytics is a data-driven platform developed using
+Python and analytics technologies to transform raw sales data
+into meaningful business insights.
+
+The system automates data processing, generates reports,
+and provides dashboards that help businesses understand
+sales performance, product trends and operational efficiency.
+
 </p>
 
 
+<div class="tech-badges">
+
+
+<span class="tech-badge">
+Python
+</span>
+
+<span class="tech-badge">
+Pandas
+</span>
+
+<span class="tech-badge">
+Plotly
+</span>
+
+<span class="tech-badge">
+Excel Automation
+</span>
+
+<span class="tech-badge">
+Business Intelligence
+</span>
+
+
 </div>
+
+
+</div>
+
 
 
 
@@ -147,8 +201,8 @@ Documentation
 </div>
 
 
-<div class="project-info">
 
+<div class="project-info">
 
 
 <h2>
@@ -158,14 +212,64 @@ Project Overview
 
 <p>
 
-Retail Analytics is a data-driven solution that
-transforms sales data into meaningful business
-insights through automated reports and dashboards.
+Retail Analytics is a business intelligence solution designed
+to help retail businesses understand their sales performance
+through data analysis, automated reporting and interactive
+visualizations.
+
+The platform processes raw sales data and converts it into
+actionable insights including product performance, sales trends,
+customer behavior and key business metrics.
 
 </p>
 
 
 </div>
+
+
+
+
+<div class="project-info">
+
+
+<h2>
+Business Problems
+</h2>
+
+
+<ul>
+
+
+<li>
+Manual preparation of sales reports using spreadsheets
+</li>
+
+
+<li>
+Difficulty identifying top-performing products and categories
+</li>
+
+
+<li>
+Limited visibility into sales trends and business KPIs
+</li>
+
+
+<li>
+Time-consuming data cleaning and reporting processes
+</li>
+
+
+<li>
+Lack of automated analytical dashboards for decision making
+</li>
+
+
+</ul>
+
+
+</div>
+
 
 
 
@@ -194,8 +298,84 @@ Documentation
 </div>
 
 
+
 <div class="project-info">
 
+
+<h2>
+Analytics Solution
+</h2>
+
+
+<p>
+
+Retail Analytics provides an end-to-end data analysis workflow
+that transforms raw business data into meaningful insights.
+
+The solution includes data cleaning, transformation,
+statistical analysis, visualization and automated reporting
+to support faster and more accurate business decisions.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="project-info">
+
+
+<h2>
+Key Features
+</h2>
+
+
+<ul>
+
+
+<li>
+<b>Sales Performance Analysis:</b>
+Analysis of revenue, sales trends and business performance.
+</li>
+
+
+<li>
+<b>Product Analysis:</b>
+Identification of top-selling products,
+categories and product contribution.
+</li>
+
+
+<li>
+<b>KPI Dashboards:</b>
+Interactive dashboards for monitoring
+important business indicators.
+</li>
+
+
+<li>
+<b>Automated Reporting:</b>
+Generation of structured business reports
+with reduced manual effort.
+</li>
+
+
+<li>
+<b>Data Processing Pipeline:</b>
+Cleaning, transformation and preparation
+of raw datasets for analysis.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+<div class="project-info">
 
 
 <h2>
@@ -203,43 +383,133 @@ Technology Stack
 </h2>
 
 
-<div class="tech-badges">
+<div class="tech-stack">
 
 
-<span class="tech-badge">
+<div class="meta-card">
+
+<h3>
 Python
-</span>
+</h3>
+
+<p>
+Core programming language used for data analysis,
+automation and analytical workflows.
+</p>
+
+</div>
 
 
-<span class="tech-badge">
+
+<div class="meta-card">
+
+<h3>
 Pandas
-</span>
+</h3>
+
+<p>
+Used for data cleaning, transformation,
+aggregation and business analysis.
+</p>
+
+</div>
 
 
-<span class="tech-badge">
+
+<div class="meta-card">
+
+<h3>
 NumPy
-</span>
+</h3>
+
+<p>
+Used for numerical calculations and
+efficient data operations.
+</p>
+
+</div>
 
 
-<span class="tech-badge">
+
+<div class="meta-card">
+
+<h3>
 Plotly
-</span>
+</h3>
+
+<p>
+Used for interactive dashboards and
+business visualizations.
+</p>
+
+</div>
 
 
-<span class="tech-badge">
+
+<div class="meta-card">
+
+<h3>
+Matplotlib
+</h3>
+
+<p>
+Used for statistical charts and
+analytical reporting.
+</p>
+
+</div>
+
+
+
+<div class="meta-card">
+
+<h3>
+SQL
+</h3>
+
+<p>
+Used for database queries and
+structured data management.
+</p>
+
+</div>
+
+
+
+<div class="meta-card">
+
+<h3>
+Jupyter Notebook
+</h3>
+
+<p>
+Used for reproducible analysis,
+experimentation and reporting.
+</p>
+
+</div>
+
+
+
+<div class="meta-card">
+
+<h3>
 Excel Automation
-</span>
+</h3>
 
+<p>
+Used for generating professional
+business reports automatically.
+</p>
 
-<span class="tech-badge">
-BI Tools
-</span>
+</div>
 
 
 </div>
 
 
 </div>
+
 
 
 
@@ -296,24 +566,246 @@ Key Features
 
 
 
-<div class="project-impact">
+
+<div class="project-info">
 
 
 <h2>
-Business Impact
+Dashboard & Analysis Screenshots
 </h2>
 
 
 <p>
 
-Improved reporting speed,
-reduced manual analysis and supported
-data-driven business decisions.
+Visual representation of sales performance,
+product analysis and business intelligence dashboards.
+
+</p>
+
+
+
+<div class="tech-stack">
+
+
+<div class="meta-card">
+
+<h3>
+Sales Dashboard
+</h3>
+
+<p>
+Interactive view of sales performance,
+revenue trends and key metrics.
+</p>
+
+</div>
+
+
+
+<div class="meta-card">
+
+<h3>
+Product Analysis
+</h3>
+
+<p>
+Identification of best-selling products
+and category performance.
+</p>
+
+</div>
+
+
+
+<div class="meta-card">
+
+<h3>
+Monthly Reports
+</h3>
+
+<p>
+Automated monthly summaries and
+business reporting.
+</p>
+
+</div>
+
+
+
+<div class="meta-card">
+
+<h3>
+Business KPIs
+</h3>
+
+<p>
+Tracking important indicators to support
+management decisions.
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="project-info">
+
+
+<h2>
+Analysis Methodology
+</h2>
+
+
+<ul>
+
+
+<li>
+<b>Data Collection:</b>
+Loading and organizing raw sales datasets.
+</li>
+
+
+<li>
+<b>Data Cleaning:</b>
+Handling missing values, duplicates,
+and inconsistent data.
+</li>
+
+
+<li>
+<b>Exploratory Data Analysis:</b>
+Finding patterns, trends and business insights.
+</li>
+
+
+<li>
+<b>Visualization:</b>
+Creating charts and dashboards for
+clear understanding.
+</li>
+
+
+<li>
+<b>Reporting:</b>
+Generating automated reports for
+business users.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+<div class="project-impact">
+
+
+<h2>
+Business Insights
+</h2>
+
+
+<p>
+
+Retail Analytics converts sales data into meaningful
+business insights by identifying performance trends,
+customer behavior patterns and product opportunities.
+
+The analysis helps businesses understand what products
+perform best, where improvements are needed and how
+data can support better decisions.
 
 </p>
 
 
 </div>
+
+
+
+
+<div class="project-info">
+
+
+<h2>
+Results & Impact
+</h2>
+
+
+<ul>
+
+
+<li>
+Reduced manual reporting effort through automation.
+</li>
+
+
+<li>
+Improved visibility into sales performance and trends.
+</li>
+
+
+<li>
+Enabled faster decision making through dashboards.
+</li>
+
+
+<li>
+Created a repeatable analytics workflow for business data.
+</li>
+
+
+<li>
+Improved accuracy and consistency of business reports.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+<div class="project-info text-center">
+
+
+<h2>
+Need Data Analytics Solutions?
+</h2>
+
+
+<p>
+
+Looking for automated reporting,
+business intelligence dashboards or
+custom data analysis solutions?
+
+Let's transform your data into actionable insights.
+
+</p>
+
+
+
+<a href="{{ url_for('contact') }}"
+class="action-btn">
+
+<i class="fa-solid fa-envelope"></i>
+
+Contact Me
+
+</a>
+
+
+</div>
+
 
 
 </section>

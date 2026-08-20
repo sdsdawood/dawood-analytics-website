@@ -130,6 +130,40 @@ rel="stylesheet">
 href="{{ url_for('static', filename='css/style.css') }}">
 
 
+
+
+<!-- Google Analytics -->
+
+
+<script async 
+src="https://www.googletagmanager.com/gtag/js?id=G-JYC5GDV609">
+</script>
+
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+
+function gtag(){
+
+dataLayer.push(arguments);
+
+}
+
+
+gtag('js', new Date());
+
+
+gtag('config', 'G-JYC5GDV609');
+
+
+</script>
+
+
+<!-- End Google Analytics -->
+
+
 </head>
 
 
@@ -166,13 +200,52 @@ Dawood Analytics
 </li>
 
 
+<li class="dropdown">
+
+
+<a class="nav-link" href="#">
+Services
+<i class="fa-solid fa-chevron-down"></i>
+</a>
+
+
+<ul class="dropdown-menu">
+
+
 <li>
-<a class="nav-link" href="#services">Services</a>
+<a href="{{ url_for('service_erp') }}">
+ERP Development
+</a>
+</li>
+
+
+<li>
+<a href="{{ url_for('service_data_analytics') }}">
+Data Analytics
+</a>
+</li>
+
+
+<li>
+<a href="{{ url_for('service_automation') }}">
+Automation Solutions
+</a>
+</li>
+
+
+</ul>
+
+
 </li>
 
 
 <li>
 <a class="nav-link" href="#projects">Projects</a>
+</li>
+
+
+<li>
+<a class="nav-link" href="{{ url_for('about') }}">About</a>
 </li>
 
 
@@ -263,6 +336,11 @@ Services
 
 <a href="#">
 Projects
+</a>
+
+
+<a href="{{ url_for('about') }}">
+About
 </a>
 
 
