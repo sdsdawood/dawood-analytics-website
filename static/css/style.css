@@ -22,7 +22,13 @@ body{
 
     font-family:'Poppins', sans-serif;
 
-    background:#F8FAFC;
+    background:
+
+    linear-gradient(
+    180deg,
+    #F8FAFC,
+    #FFFFFF
+    );
 
     color:#0F172A;
 
@@ -131,9 +137,15 @@ body{
 
     background:
 
+    radial-gradient(
+    circle at top right,
+    rgba(16,185,129,0.25),
+    transparent 40%
+    ),
+
     linear-gradient(
     135deg,
-    #0F172A,
+    #020617,
     #064E3B
     );
 
@@ -147,9 +159,9 @@ body{
 
 .hero h1{
 
-    font-size:70px;
+    font-size:72px;
 
-    font-weight:800;
+    font-weight:900;
 
     line-height:1.2;
 
@@ -161,9 +173,9 @@ body{
 
 .hero p{
 
-    font-size:25px;
+    font-size:24px;
 
-    font-weight:300;
+    font-weight:400;
 
     max-width:700px;
 
@@ -192,15 +204,19 @@ body{
 
 .btn{
 
-    padding:16px 40px;
+    padding:18px 45px;
 
     border-radius:50px;
+
+    letter-spacing:0.5px;
 
     text-decoration:none;
 
     font-weight:600;
 
-    transition:.3s;
+    transition:all .3s ease;
+
+    cursor:pointer;
 
 }
 
@@ -220,7 +236,12 @@ body{
 
     background:#059669;
 
-    transform:translateY(-4px);
+    transform:
+    translateY(-6px)
+    scale(1.03);
+
+    box-shadow:
+    0 15px 35px rgba(16,185,129,0.45);
 
 }
 
@@ -298,10 +319,17 @@ body{
 
     box-shadow:
 
-    0 10px 30px rgba(0,0,0,.08);
+    0 15px 40px rgba(15,23,42,.08);
 
 
-    transition:.3s;
+    border:
+
+    1px solid rgba(15,23,42,.05);
+
+
+    transition:
+
+    all .35s ease;
 
 }
 
@@ -309,7 +337,14 @@ body{
 
 .service-card:hover{
 
-    transform:translateY(-10px);
+    transform:
+
+    translateY(-12px);
+
+
+    box-shadow:
+
+    0 25px 50px rgba(15,23,42,.15);
 
 }
 
@@ -420,7 +455,10 @@ body{
 
     margin-bottom:35px;
 
-    border:1px solid rgba(255,255,255,0.2);
+    border:1px solid rgba(255,255,255,0.25);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.15);
 
 }
 
@@ -445,6 +483,18 @@ body{
     font-size:45px;
 
     color:#10B981;
+
+
+    background:
+
+    rgba(16,185,129,.1);
+
+
+    padding:15px;
+
+
+    border-radius:18px;
+
 
     margin-bottom:25px;
 
@@ -795,10 +845,13 @@ html{
 
     box-shadow:
 
-    0 10px 25px rgba(0,0,0,.08);
+    0 15px 35px rgba(15,23,42,.08);
 
 
-    transition:.3s;
+    border:1px solid rgba(15,23,42,.05);
+
+
+    transition:all .3s ease;
 
 }
 
@@ -806,7 +859,11 @@ html{
 
 .feature:hover{
 
-    transform:translateY(-8px);
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 20px 45px rgba(15,23,42,.15);
 
 }
 
@@ -926,10 +983,22 @@ html{
     border-radius:20px;
 
 
-    backdrop-filter:blur(10px);
+    border:
+
+    1px solid rgba(255,255,255,.15);
 
 
-    transition:.3s;
+    backdrop-filter:blur(12px);
+
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.20);
+
+
+    transition:
+
+    all .35s ease;
 
 }
 
@@ -937,7 +1006,10 @@ html{
 
 .stat-card:hover{
 
-    transform:translateY(-10px);
+    transform:
+
+    translateY(-12px)
+    scale(1.03);
 
 }
 
@@ -945,7 +1017,9 @@ html{
 
 .stat-card h3{
 
-    font-size:55px;
+    font-size:60px;
+
+    font-weight:800;
 
     color:#10B981;
 
@@ -1048,10 +1122,15 @@ html{
 
     box-shadow:
 
-    0 10px 30px rgba(0,0,0,.08);
+    0 15px 40px rgba(15,23,42,.10);
 
 
-    transition:.3s;
+    border:
+
+    1px solid rgba(15,23,42,.05);
+
+
+    transition:.35s ease;
 
     text-align:center;
 
@@ -1147,7 +1226,10 @@ html{
 
     background:#059669;
 
-    transform:translateY(-3px);
+    transform:
+
+    translateY(-5px)
+    scale(1.03);
 
 }
 
@@ -1287,9 +1369,18 @@ html{
 
     border-radius:40px;
 
+
     font-weight:600;
 
-    transition:.3s;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.15);
+
+
+    transition:
+
+    all .35s ease;
 
 }
 
@@ -1307,7 +1398,10 @@ html{
 
 .contact-btn:hover{
 
-    transform:translateY(-5px);
+    transform:
+
+    translateY(-7px)
+    scale(1.05);
 
 }
 
@@ -1485,6 +1579,51 @@ html{
 section{
 
     scroll-margin-top:100px;
+
+}
+
+
+
+.project-image{
+
+    transition:
+    transform .4s ease;
+
+}
+
+
+.project-card:hover .project-image{
+
+    transform:
+    scale(1.05);
+
+}
+
+
+
+.contact-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:50px;
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    border-radius:30px;
+
+
+    backdrop-filter:blur(12px);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
 
 }
 
