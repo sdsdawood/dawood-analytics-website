@@ -13,7 +13,9 @@
 
 
 <title>
+{% block title %}
 Dawood Analytics | ERP Development, Data Analytics & Financial Solutions
+{% endblock %}
 </title>
 
 <link rel="icon"
@@ -24,9 +26,11 @@ href="{{ url_for('static', filename='images/favicon.ico') }}">
 
 <meta name="description"
 content="
+{% block description %}
 Dawood Analytics provides professional ERP development,
 business intelligence, data analytics, financial reporting,
 and automation solutions for modern businesses.
+{% endblock %}
 ">
 
 
@@ -48,18 +52,49 @@ content="Dawood Analytics">
 
 <!-- Open Graph Social Sharing -->
 
+
 <meta property="og:title"
-content="Dawood Analytics | ERP & Data Solutions">
+content="{% block og_title %}
+Dawood Analytics | ERP & Data Solutions
+{% endblock %}">
+
 
 
 <meta property="og:description"
-content="
+content="{% block og_description %}
 Transforming Business Data into Intelligent Decisions.
-">
+{% endblock %}">
+
 
 
 <meta property="og:type"
 content="website">
+
+
+
+<meta property="og:image"
+content="{% block og_image %}
+{{ url_for('static',
+filename='images/data_platform.png',
+_external=True) }}
+{% endblock %}">
+
+
+
+<meta name="twitter:card"
+content="summary_large_image">
+
+
+<meta name="twitter:title"
+content="{% block twitter_title %}
+Dawood Analytics
+{% endblock %}">
+
+
+<meta name="twitter:description"
+content="{% block twitter_description %}
+ERP Development and Data Analytics Solutions.
+{% endblock %}">
 
 
 
@@ -115,26 +150,34 @@ Dawood Analytics
 
 
 
+<div class="menu-toggle">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+
+
 <ul class="nav-links">
 
 
 <li>
-<a href="#home">Home</a>
+<a class="nav-link active" href="#home">Home</a>
 </li>
 
 
 <li>
-<a href="#services">Services</a>
+<a class="nav-link" href="#services">Services</a>
 </li>
 
 
 <li>
-<a href="#projects">Projects</a>
+<a class="nav-link" href="#projects">Projects</a>
 </li>
 
 
 <li>
-<a href="#contact">Contact</a>
+<a class="nav-link" href="#contact">Contact</a>
 </li>
 
 

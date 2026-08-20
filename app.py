@@ -1,5 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import os
+from database import create_table, save_contact, get_contacts
 
 
 # ==========================================================
@@ -7,6 +8,8 @@ import os
 # ==========================================================
 
 app = Flask(__name__)
+
+create_table()
 
 
 app.config["SECRET_KEY"] = os.environ.get(
@@ -24,6 +27,90 @@ app.config["SECRET_KEY"] = os.environ.get(
 def home():
 
     return render_template("index.html")
+
+
+
+# ==========================================================
+# PROJECT DETAIL ROUTES
+# ==========================================================
+
+
+@app.route("/projects/marbleerp")
+def marbleerp():
+
+    return render_template(
+        "projects/marbleerp.html"
+    )
+
+
+
+@app.route("/projects/retail-analytics")
+def retail_analytics():
+
+    return render_template(
+        "projects/retail.html"
+    )
+
+
+
+@app.route("/projects/data-platform")
+def data_platform():
+
+    return render_template(
+        "projects/analytics.html"
+    )
+
+
+
+
+# ==========================================================
+# CONTACT FORM
+# ==========================================================
+
+
+@app.route("/contact", methods=["POST"])
+def contact():
+
+    name = request.form.get("name")
+
+    email = request.form.get("email")
+
+    message = request.form.get("message")
+
+
+    print("New Contact Message")
+    print("-------------------")
+    print("Name:", name)
+    print("Email:", email)
+    print("Message:", message)
+
+
+    save_contact(
+        name,
+        email,
+        message
+    )
+
+
+    return render_template(
+        "contact_success.html"
+    )
+
+
+
+
+
+@app.route("/admin/contacts")
+def admin_contacts():
+
+
+    contacts = get_contacts()
+
+
+    return render_template(
+        "admin_contacts.html",
+        contacts=contacts
+    )
 
 
 

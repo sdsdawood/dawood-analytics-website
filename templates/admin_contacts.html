@@ -1,0 +1,70 @@
+
+{% extends "base.html" %}
+
+
+{% block title %}
+Contact Messages | Admin
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<section class="contact">
+
+
+<div class="contact-container">
+
+
+<h2>
+Customer Messages
+</h2>
+
+
+
+<table>
+
+
+<tr>
+
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Message</th>
+
+</tr>
+
+
+
+{% for contact in contacts %}
+
+
+<tr>
+
+<td>{{ contact[0] }}</td>
+
+<td>{{ contact[1] }}</td>
+
+<td>{{ contact[2] }}</td>
+
+<td>{{ contact[3] }}</td>
+
+
+</tr>
+
+
+{% endfor %}
+
+
+
+</table>
+
+
+</div>
+
+
+</section>
+
+
+{% endblock %}
